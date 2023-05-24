@@ -64,12 +64,4 @@ jobs:
       - name: Run tests with Python 3.11
         run: pytest test
   
-  runMultipleCommands:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - run: | 
-       echo "Covarage report"
-       coverage -m unittest discover
-       coverage report json
 
